@@ -15,8 +15,8 @@ def log(message):
 
 # ============= НАСТРОЙКИ (из командной строки или по умолчанию) =============
 
-DEFAULT_MINER_ID = "56948"
-DEFAULT_AUTH_KEY = "YOUR_AUTH_KEY"
+DEFAULT_MINER_ID = "11111"
+DEFAULT_AUTH_KEY = "ffffffffffffffffffffffff"
 DEFAULT_TEMP_MIN_OK = 67
 DEFAULT_TEMP_MAX_OK = 72
 DEFAULT_FAN_MIN = 30
@@ -56,7 +56,7 @@ print(f"Интервал повышения кулера: {FAN_INCREASE_INTERVAL
 print(f"Подтверждение низкой температуры: {FAN_DECREASE_CONFIRM_TIME} сек")
 print("="*60)
 print(f"\nИспользование: python pitbit_auto.py [MINER_ID] [AUTH_KEY] [TEMP_MIN] [TEMP_MAX] [FAN_MIN] [FAN_MAX] [CHECK_INTERVAL] [DECREASE_CONFIRM_TIME]")
-print(f"Пример: python pitbit_auto.py 56948 YOUR_AUTH_KEY 67 72 30 100 10 60")
+print(f"Пример: python pitbit_auto.py 11111 ffffffffffffffffffffffff 67 72 30 100 10 60")
 print("="*60 + "\n")
 
 # ============= ИНИЦИАЛИЗАЦИЯ =============

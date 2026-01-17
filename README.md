@@ -25,7 +25,7 @@ python pitbit_auto.py [MINER_ID] [AUTH_KEY] [TEMP_MIN] [TEMP_MAX] [FAN_MIN] [FAN
 
 Example:
 ```bash
-python pitbit_auto.py 56948 YOUR_AUTH_KEY 67 72 30 100 10 60
+python pitbit_auto.py 11111 ffffffffffffffffffffffff 67 72 30 100 10 60
 ```
 
 For more details, see the [SDD](spec/SDD.md).

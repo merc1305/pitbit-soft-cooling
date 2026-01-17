@@ -1,7 +1,7 @@
 # Software Design Document - Pitbit Soft Cooling
 
 ## Goal
-The goal of this project is to provide automated, dynamic cooling management for crypto miners on the Pitbit platform. 
+The goal of this project is to provide automated, dynamic cooling management for crypto miners on the [pitbit.online](https://pitbit.online) platform. 
 
 This tool was developed after realizing that Pitbit's built-in "smart management" often fails to maintain stable temperatures for certain miners—specifically those with manufacturing defects like poorly applied thermal paste. After a month of unsuccessful attempts to resolve these issues with Pitbit support, this custom controller was created. It has since demonstrated excellent results in stabilizing temperatures where the native system failed.
 

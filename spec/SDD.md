@@ -1,7 +1,15 @@
 # Software Design Document - Pitbit Soft Cooling
 
 ## Goal
-The goal of this project is to provide automated, dynamic cooling management for crypto miners on the Pitbit platform. It aims to maintain optimal operating temperatures while minimizing unnecessary wear on the cooling fans by adjusting speeds based on real-time temperature data.
+The goal of this project is to provide automated, dynamic cooling management for crypto miners on the Pitbit platform. 
+
+This tool was developed after realizing that Pitbit's built-in "smart management" often fails to maintain stable temperatures for certain miners—specifically those with manufacturing defects like poorly applied thermal paste. After a month of unsuccessful attempts to resolve these issues with Pitbit support, this custom controller was created. It has since demonstrated excellent results in stabilizing temperatures where the native system failed.
+
+## Future Work
+- **Broad Applicability Research**: Investigate if this granular control logic (±1% polling) can benefit other miner models by:
+    - Reducing temperature spikes on chips.
+    - Increasing the operational lifespan of the cooling fans.
+    - Speeding up the transition to the most efficient operating mode.
 
 ## Scope (MVP)
 The current implementation is a CLI tool that:
@@ -10,6 +18,10 @@ The current implementation is a CLI tool that:
 - Dynamically increases fan speed when the temperature exceeds a high threshold.
 - Dynamically decreases fan speed when the temperature stays below a low threshold for a confirmed period.
 - Uses an automated browser (`undetected_chromedriver`) to interact with the web interface.
+
+### Hardware Compatibility
+- **Tested on**: Antminer S21
+- **Target Temperature**: Configured based on [Bitmain recommendations](https://support.bitmain.com/hc/en-us/articles/360005088914-Miner-Normal-Operating-Temperature-Range).
 
 ## User Scenarios
 1. **Automated Maintenance**: A user starts the script with their miner ID and auth key. The script runs indefinitely, ensuring the miner stays within the 67-72°C range without manual intervention.

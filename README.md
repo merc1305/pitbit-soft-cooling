@@ -1,6 +1,11 @@
 # Pitbit Soft Cooling
 
+![Demonstration of cooling results](assets/before_after_4h_24h.webp)
+
 Automated cooling management for Pitbit miners.
+
+> [!NOTE]
+> This code has been tested on **Antminer S21**. The default temperature ranges are based on official [Bitmain factory recommendations](https://support.bitmain.com/hc/en-us/articles/360005088914-Miner-Normal-Operating-Temperature-Range).
 
 ## Overview
 This script monitors the temperature of a miner on the Pitbit platform and dynamically adjusts the fan speed to maintain optimal temperatures (default 67-72°C).
